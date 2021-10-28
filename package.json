@@ -7,6 +7,9 @@
     "name": "Wenming Wang",
     "email": "wangwenming1985@gmail.com"
   },
+  "scripts": {
+    "test-server": "mocha ./test/chat-server.js"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/wangwenming/tantan.git"
@@ -16,5 +19,8 @@
     "chai": "1.10.x",
     "sockjs": "0.3.9",
     "sockjs-client": "1.0.0-beta.12"
+  },
+  "dependencies": {
+    "redis": "^3.1.2"
   }
 }

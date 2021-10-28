@@ -17,8 +17,8 @@
     var pid = process.pid;
     // 进程启动时间
     var uptime = Date.now();
-    var usage = require('usage');
-    var profiler = require('v8-profiler');
+    // var usage = require('usage');
+    // var profiler = require('v8-profiler');
 
     // 连接数
     var totalConns = 0;
@@ -136,6 +136,7 @@
              * 获取当前进程状态
              */
             stats: function() {
+                /*
                 usage.lookup(pid, {keepHistory: true}, function(err, result) {
                     var cpu = null;
                     var memory = null;
@@ -152,6 +153,7 @@
                     };
                     socket.write('stats ' + JSON.stringify(data));
                 });
+                */
             }
         };
     });
